@@ -1,10 +1,48 @@
+# Ignore everything by default
 *
+
+# Allow directories so unignored files can be included
 !*/
-!*.*
-*.hdf5
+
+# Keep the ignore file itself
+!.gitignore
+
+# Only track source and notebooks
+!**/*.py
+!**/*.ipynb
+
+# Common caches and build artifacts (still ignored)
+__pycache__/
 *.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Explicitly ignore large/data/media formats
+*.csv
+*.tsv
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.zip
+*.tar
+*.tar.gz
+*.gz
+*.npz
+*.npy
+*.hdf5
 *.wav
-__pycache__
-_logs
+*.mp3
+*.flac
+*.tfrecord
 *.pth
-paper_statistics
+*.pt
+*.onnx
+*.ckpt
+
+# Project-specific folders
+_logs/
+paper_statistics/

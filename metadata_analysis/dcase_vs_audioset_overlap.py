@@ -13,9 +13,9 @@ from typing import Dict, Tuple
 import pandas as pd
 
 # DCASE_DEFAULT = Path("/Users/yuliangzhang/Documents/work_dir/dcase2021_metadata/train/audioset_strong.tsv")
-DCASE_DEFAULT = Path("/Users/yuliangzhang/Documents/work_dir/dcase2021_metadata/validation/validation.tsv")
-AUDIOSET_TRAIN_DEFAULT = Path("/Users/yuliangzhang/Documents/work_dir/audioset_metadata/audioset_train_strong.tsv")
-AUDIOSET_EVAL_DEFAULT = Path("/Users/yuliangzhang/Documents/work_dir/audioset_metadata/audioset_eval_strong.tsv")
+DCASE_DEFAULT = Path("./metadata/dcase2021_metadata/validation/validation.tsv")
+AUDIOSET_TRAIN_DEFAULT = Path("./metadata/audioset_metadata/audioset_train_strong.tsv")
+AUDIOSET_EVAL_DEFAULT = Path("./metadata/audioset_metadata/audioset_eval_strong.tsv")
 
 
 def filename_to_segment_id(filename: str) -> str:
